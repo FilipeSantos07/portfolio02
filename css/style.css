@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    text-decoration: none;
+    list-style: none;
+    color: #6F38C5;
+}
+body {
+    background: #ADDDD0;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #6F38C5;
+    height: 50px;
+    padding: 0 5%;
+   
+}
+nav .logo {
+    font-weight: 800;
+    animation: fromTop 1.2s;
+}
+nav ul li {
+    transition: all .05s;
+}
+nav ul li:hover {
+    transform: scale(1.02);
+}
+nav ul li:nth-child(1) {
+    animation: fromTop 1.2s .1s backwards;
+}
+nav ul li:nth-child(2) {
+    animation: fromTop 1.2s .2s backwards;
+}
+nav ul li:nth-child(3) {
+    animation: fromTop 1.2s .3s backwards;
+}
+nav ul li:nth-child(4) {
+    animation: fromTop 1.2s .4s backwards;
+}
+nav ul li:nth-child(5) {
+    animation: fromTop 1.2s .5s backwards;
+}
+nav ul li a:hover {
+    color: #EEEEEE;
+    text-decoration: underline;
+}
+nav .logo {
+    font-size: 18px;
+}
+nav a {
+    color: #ADDDD0;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    gap: 64px;
+}
+.container {
+    max-width: 1092px;
+    margin: 100px auto 30px auto;
+    width: 90%
+}
+h1 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 80px;
+    animation: fromBottom 1.2s;
+}
+p {
+    font-weight: 500;
+    color: #6F38C5;
+    line-height: 28px;
+    margin: 30px 0;
+    animation: fromBottom 1.2s .1s backwards;
+}
+main section p span {
+    font-weight: 800;
+}
+.line {
+    border: 1px solid #87A2FB;
+    margin: 80px 0;
+    animation: fromBottom 1.2s .4s backwards;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.redes ul {
+    display: flex;
+    gap: 30px;
+}
+.redes ul li {
+    transition: all .3s;
+}
+.redes ul li:hover {
+    transform: scale(1.2);
+}
+.redes ul li:nth-child(1) {
+    animation: fromBottom 1.2s;
+}
+.redes ul li:nth-child(2) {
+    animation: fromBottom 1.2s .1s backwards;
+}
+.redes ul li:nth-child(3) {
+    animation: fromBottom 1.2s .2s backwards;
+}
+.redes a:nth-child(2) {
+    animation: fromBottom 1.2s .3s backwards;
+}
+.redes ul li a i {
+    font-size: 40px;
+    height: 32px;
+    background: #EEEEEE;
+    display: flex;
+    align-items: center; 
+}
+.redes button {
+    background: #6F38C5;
+    color: #EEEEEE;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 800;
+}
+.redes button:hover {
+    transform: scale(1.1);
+}
+.redes button i {
+    color: #ADDDD0;
+}
+.redes button i {
+    color: #EEEEEE;
+}
+.tecnologies {
+    background: #87A2FB;
+    padding: 0 40px;
+    border-radius: 8px;
+}
+.tecnologies ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 50px;
+}
+.tecnologies ul li {
+    transition: all .3s;
+}
+.tecnologies ul li:hover {
+    transform: scale(1.2);
+}
+.tecnologies ul li:nth-child(1) i {
+    color: rgb(255, 81, 0);
+}
+.tecnologies ul li:nth-child(2) i {
+    color: rgb(0, 119, 255);
+}
+.tecnologies ul li:nth-child(3) i {
+    font-size: 48px;
+    color: rgb(255, 187, 0);
+}
+.spanverde {
+    color: rgb(12, 165, 12);
+}
+.qualification p i {
+    color: rgb(12, 165, 12);
+}
+.portfolio h1 {
+    text-align: center;
+}
+.portfolio ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 100px;
+}
+.portfolio ul li a img {
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+}
+.portfolio ul li {
+    width: 400px;
+    height: auto;
+    text-align: center;
+    background: #99b1fd;
+    border-radius: 10px;
+    padding: 2px 20px;
+    margin-bottom: 70px;
+    transition: all .3s;
+    animation: fromBottom 1.2s .2s backwards;
+}
+.portfolio ul li:hover {
+    transform: scale(1.02);
+}
+.portfolio ul li p:nth-child(1) {
+    margin: 15px 0 ;
+}
+.portfolio ul li p:nth-child(3) {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.contact {
+    text-align: left;
+    background: #87A2FB;
+    padding: 0 40px;
+    border-radius: 8px;
+}
+.contact i {
+    color: rgb(21, 241, 21);
+    font-size: 30px;
+}
+.contact p {
+    margin: 10px 0;
+    line-height: 50px;
+}
+.box-text {
+    margin-top: 30px;
+}
+.box-text p i {
+    margin-right: 5px;
+}
+footer p {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.toTopButton {
+    padding: 10px 10px;
+    position: fixed;
+    bottom: 100px;
+    right: 28px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    background: #87A2FB;
+    cursor: pointer;
+    transition: all .3s;
+}
+.toTopButton:hover {
+    transform: scale(1.2);
+}
+.toTopButton i {
+    color: #6F38C5;
+}
+.whatsapp {
+    width: 65px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all .3s;
+}
+.whatsapp:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
