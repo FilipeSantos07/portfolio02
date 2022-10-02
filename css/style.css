@@ -270,12 +270,13 @@ footer p {
     background: #87A2FB;
     cursor: pointer;
     transition: all .3s;
+    background: #6F38C5;
 }
 .toTopButton:hover {
     transform: scale(1.2);
 }
 .toTopButton i {
-    color: #6F38C5;
+    color: #ADDDD0;
 }
 .whatsapp {
     width: 65px;
@@ -346,7 +347,14 @@ footer p {
         font-size: 0.7rem;
         display: inline-block;
     }
+    .redes button {
+        gap: 0;
+    }
+    .redes ul {
+        gap: 17px;
+    }
 }
+
 @media (min-width:801px) and (max-width:999px) {
     nav ul {
         gap: 40px;
