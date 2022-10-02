@@ -16,4 +16,4 @@ Esse é meu segundo portfolio, eu queria mudar o visual do primeiro, aí coloque
 
 ## 💛 Contato
 
-outerspaceguy@live.co.uk
+FilipeSantosEstudos1@gmail.com
