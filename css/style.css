@@ -9,6 +9,14 @@
     list-style: none;
     color: #6F38C5;
 }
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.menu-icon i {
+    color: #ADDDD0;
+    font-size: 30px;
+}
 body {
     background: #ADDDD0;
 }
@@ -25,21 +33,15 @@ nav {
     z-index: 1;
    
 }
+.checkbtn i {
+    color: #ADDDD0;
+    font-size: 30px;
+    cursor: pointer;
+}
 nav .logo {
     font-weight: 800;
-    animation: fromTop 1.2s;
-}
-nav button {
-    background: transparent;
-    border: none;
-    color: #ADDDD0;
-    font-size: 36px;
-    position: absolute;
-    right: 10px;
-    display: none;
-}
-button:focus ~ nav ul {
-    height: 250px;
+    font-size: 18px;
+    animation: fromTop 1.2s;  
 }
 nav ul li {
     transition: all .05s;
@@ -65,9 +67,6 @@ nav ul li:nth-child(5) {
 nav ul li a:hover {
     color: #EEEEEE;
     text-decoration: underline;
-}
-nav .logo {
-    font-size: 18px;
 }
 nav a {
     color: #ADDDD0;
@@ -309,6 +308,43 @@ footer p {
         transform: translateY(0);
     }
 }
-@media (max-width:700px) {
-     
+@media (max-width:800px) {
+    .menu-icon {
+        display: block;
+        z-index: 10;
+    }
+    nav ul {
+        position: fixed;
+        top: 50px;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: all .6s;
+        background: #6F38C5;
+        gap: 50px;
+        padding-top: 80px;
+    }
+    nav ul.open {
+        transform: translateX(0);
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav ul li a {
+        font-size: 1.3rem;
+    }
+    .contact p {
+        font-size: 0.7rem;
+    }
+}
+@media (min-width:801px) and (max-width:999px) {
+    nav ul {
+        gap: 40px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
 }
