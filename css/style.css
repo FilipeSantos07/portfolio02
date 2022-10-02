@@ -321,7 +321,7 @@ footer p {
         position: fixed;
         top: 50px;
         right: 0;
-        width: 40%;
+        width: 50%;
         height: 100%;
         align-items: center;
         flex-direction: column;
@@ -329,7 +329,7 @@ footer p {
         transition: all .6s;
         background: #6F38C5;
         gap: 50px;
-        padding-top: 80px;
+        padding-top: 20px;
     }
     nav ul.open {
         transform: translateX(0);
@@ -338,7 +338,7 @@ footer p {
         margin: 10px 0;
     }
     nav ul li a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .contact {
         padding: 0 15px;
