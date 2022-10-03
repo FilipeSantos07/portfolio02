@@ -162,7 +162,7 @@ main section p span {
 .tecnologies {
     background: #87A2FB;
     padding: 0 40px;
-    border-radius: 8px;
+    border-radius: 8px; 
 }
 .tecnologies ul {
     display: flex;
