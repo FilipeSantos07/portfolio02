@@ -9,14 +9,6 @@
     list-style: none;
     color: #6F38C5;
 }
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-.menu-icon i {
-    color: #ADDDD0;
-    font-size: 30px;
-}
 body {
     background: #ADDDD0;
 }
@@ -75,6 +67,14 @@ nav a {
 nav ul {
     display: flex;
     gap: 64px;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.menu-icon i {
+    color: #ADDDD0;
+    font-size: 30px;
 }
 .container {
     max-width: 1092px;
