@@ -25,15 +25,15 @@ nav {
     z-index: 1;
    
 }
-.checkbtn i {
-    color: #ADDDD0;
-    font-size: 30px;
-    cursor: pointer;
-}
 nav .logo {
     font-weight: 800;
     font-size: 18px;
-    animation: fromTop 1.2s;  
+    animation: fromTop 1.2s;
+    color: #ADDDD0;  
+}
+nav ul {
+    display: flex;
+    gap: 64px;
 }
 nav ul li {
     transition: all .05s;
@@ -56,17 +56,13 @@ nav ul li:nth-child(4) {
 nav ul li:nth-child(5) {
     animation: fromTop 1.2s .5s backwards;
 }
-nav ul li a:hover {
-    color: #EEEEEE;
-    text-decoration: underline;
-}
-nav a {
+nav ul li a {
     color: #ADDDD0;
     font-weight: bold;
 }
-nav ul {
-    display: flex;
-    gap: 64px;
+nav ul li a:hover {
+    color: #EEEEEE;
+    text-decoration: underline;
 }
 .menu-icon {
     display: none;
@@ -96,11 +92,6 @@ p {
 }
 main section p span {
     font-weight: 800;
-}
-.line {
-    border: 1px solid #87A2FB;
-    margin: 80px 0;
-    animation: fromBottom 1.2s .4s backwards;
 }
 .redes {
     display: flex;
@@ -154,10 +145,12 @@ main section p span {
     transform: scale(1.1);
 }
 .redes button i {
-    color: #ADDDD0;
-}
-.redes button i {
     color: #EEEEEE;
+}
+.line {
+    border: 1px solid #87A2FB;
+    margin: 80px 0;
+    animation: fromBottom 1.2s .4s backwards;
 }
 .tecnologies {
     background: #87A2FB;
@@ -203,11 +196,6 @@ main section p span {
     gap: 5px;
     margin-top: 100px;
 }
-.portfolio ul li a img {
-    width: 250px;
-    height: 150px;
-    border-radius: 8px;
-}
 .portfolio ul li {
     width: 400px;
     height: auto;
@@ -230,15 +218,16 @@ main section p span {
     line-height: 25px;
     margin-top: 20px;
 }
+.portfolio ul li a img {
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+}
 .contact {
     text-align: left;
     background: #87A2FB;
     padding: 0 40px;
     border-radius: 8px;
-}
-.contact i {
-    color:rgb(40, 240, 40);
-    font-size: 30px;
 }
 .contact p {
     margin: 10px 0;
@@ -246,6 +235,10 @@ main section p span {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.contact i {
+    color:rgb(40, 240, 40);
+    font-size: 30px;
 }
 .box-text {
     margin-top: 30px;
@@ -310,13 +303,6 @@ footer p {
     }
 }
 @media (max-width:800px) {
-    .container {
-        min-width: 250px;
-    }
-    .menu-icon {
-        display: block;
-        z-index: 10;
-    }
     nav ul {
         position: fixed;
         top: 50px;
@@ -331,14 +317,27 @@ footer p {
         gap: 50px;
         padding-top: 20px;
     }
-    nav ul.open {
-        transform: translateX(0);
-    }
     nav ul li {
         margin: 10px 0;
     }
     nav ul li a {
         font-size: 1.2rem;
+    }
+    nav ul.open {
+        transform: translateX(0);
+    }
+    .menu-icon {
+        display: block;
+        z-index: 10;
+    }
+    .container {
+        min-width: 250px;
+    }
+    .redes ul {
+        gap: 17px;
+    }
+    .redes button {
+        gap: 0;
     }
     .contact {
         padding: 0 15px;
@@ -346,12 +345,6 @@ footer p {
     .contact p {
         font-size: 0.8rem;
         display: inline-block;
-    }
-    .redes button {
-        gap: 0;
-    }
-    .redes ul {
-        gap: 17px;
     }
 }
 
