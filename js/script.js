@@ -1,6 +1,21 @@
-var topo = document.body
-var menu = document.querySelector("nav ul");
-var menuIcon = document.querySelector(".menu-icon");
+const topo = document.body
+const menu = document.querySelector("nav ul");
+const menuIcon = document.querySelector(".menu-icon");
+const sobre = document.querySelector("#menuSobre")
+const tech = document.querySelector("#menuTecnologias")
+const quali = document.querySelector("#menuQualificação")
+const port = document.querySelector("#menuPortfolio")
+const contact = document.querySelector("#menuContato")
+
+sobre.addEventListener(`click`, closeMenu)
+tech.addEventListener(`click`, closeMenu)
+quali.addEventListener(`click`, closeMenu)
+port.addEventListener(`click`, closeMenu)
+contact.addEventListener(`click` , closeMenu)
+
+function closeMenu() {
+    menu.classList.remove("open")
+}
 
 function abrirMenu() {
     menu.classList.toggle("open")
